@@ -5,6 +5,7 @@ const knex = require("knex")({
     database: process.env.DB,
     user: process.env.USER,
     password: process.env.PASS,
+    port: process.env.PGPORT,
   },
   pool: {
     min: 1,

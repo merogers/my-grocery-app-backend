@@ -25,6 +25,7 @@ services:
       USER: pg-user
       PASS: pg-password
       DB: groceries
+      PGPORT: 5001
 
 
 
