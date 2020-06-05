@@ -14,9 +14,9 @@ services:
     command: sh -c "npm install && npm run start"
     ports:
       - 5000:5000
-    working_dir: /pg-server
+    working_dir: /pg-express-api
     volumes:
-      - ./:/pg-server
+      - ./:/pg-express-api
     depends_on:
       - pg-db
     environment:
