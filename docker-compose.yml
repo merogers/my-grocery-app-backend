@@ -5,7 +5,7 @@ services:
     image: postgres
     restart: unless-stopped
     ports:
-      - 5001:5001
+      - "5001:5001"
     environment:
       POSTGRES_USER: pg-user
       POSTGRES_DB: groceries
