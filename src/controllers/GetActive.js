@@ -9,7 +9,7 @@ const handleGetActive = (req, res, db) => {
           if (item.length) {
             res.json(item);
           } else {
-            res.status(400).json("No Entries Found");
+            res.status(200).json("No Entries in Database");
           }
         })
         .catch(() => res.status(400).json("Entry Fetch Failed"))
